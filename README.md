@@ -4,7 +4,7 @@ Hands-on labs and real-world projects for Docker, Kubernetes, GitOps, CI/CD, AWS
 ----
 <div align="center">
 
-<img src="./assets/banner.png" alt="DevOps Labs Banner" width="100%"/>
+<img src="./assets/assets.png" alt="DevOps Labs Banner" width="100%"/>
 
 <h1>⚙️ DevOps Labs</h1>
 
