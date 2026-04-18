@@ -99,7 +99,7 @@ Start at the beginning or jump into the track that matches your current level.
 
 | # | Lab | What You'll Build | Difficulty | Est. Time |
 |---|-----|-------------------|-----------|-----------|
-| 01 | [Running Your First Container](./https://github.com/samuel-nartey/devops-labs/tree/main/Docker%20%26%20Containers/Running%20Your%20First%20Container) | Run, inspect and manage containers | 🟢 Foundation | 30 min |
+| 01 | [Running Your First Container](./Docker%20%26%20Containers/Running%20Your%20First%20Container) | Run, inspect and manage containers | 🟢 Foundation | 30 min |
 | 02 | [Writing Production Dockerfiles](./docker/lab-02/) | Multi-stage builds, layer optimisation | 🟡 Intermediate | 45 min |
 | 03 | [Multi-Service App with Compose](./docker/lab-03/) | 3-tier app: app + db + reverse proxy | 🟡 Intermediate | 60 min |
 | 04 | [Docker Networking Deep Dive](./docker/lab-04/) | Bridge, host and overlay networks | 🟡 Intermediate | 45 min |
