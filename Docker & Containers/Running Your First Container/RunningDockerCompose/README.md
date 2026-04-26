@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 What Is This Project?
+##  What Is This Project?
 
 DockerQuiz is **not just a quiz** — it is a fully containerized application designed to teach you Docker by letting you *use* Docker, not just read about it.
 
@@ -25,7 +25,7 @@ Most Docker tutorials show you commands in isolation. This project shows you how
 
 ---
 
-## 🧱 The 3-Container Architecture
+##  The 3-Container Architecture
 
 When you run `docker compose up`, Docker starts **three containers** that communicate over a private internal network called `quiz-network`:
 
@@ -55,7 +55,7 @@ In real-world production applications, you almost never run everything in a sing
 
 This project mirrors exactly how real applications are deployed.
 
-### 🔑 Key Concept: Container DNS
+###  Key Concept: Container DNS
 
 The single most important thing to understand about this project is how `quiz-app` talks to MongoDB. It does **not** use `localhost` — it uses the **service name** defined in `docker-compose.yml` as the hostname:
 
@@ -92,7 +92,7 @@ running docker compose/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -169,7 +169,7 @@ docker compose down -v
 
 ---
 
-## 🔬 Understanding the docker-compose.yml
+##  Understanding the docker-compose.yml
 
 Open `docker-compose.yml` and read it alongside these annotations — this file is the heart of the project:
 
@@ -218,7 +218,7 @@ networks:
 
 ---
 
-## 📊 What Gets Saved to MongoDB
+##  What Gets Saved to MongoDB
 
 Every action in the quiz writes a document to MongoDB. Open Mongo Express at http://localhost:8081 and watch the collections update as you play.
 
@@ -266,7 +266,7 @@ Created when you complete all 20 questions:
 
 ---
 
-## 🔍 Useful Commands to Run While the Containers Are Up
+##  Useful Commands to Run While the Containers Are Up
 
 Open a second terminal and try these while the quiz is running:
 
@@ -304,7 +304,7 @@ docker volume ls
 
 ---
 
-## 💡 How the Session System Works (No Cookies)
+##  How the Session System Works (No Cookies)
 
 A common problem with Flask running inside Docker is that browser cookies are unreliable across container network boundaries. This project solves that with a clean architectural decision — the session ID lives in the **URL**, not in a cookie:
 
@@ -323,7 +323,7 @@ Your quiz state (score, current question, name, avatar) is stored in MongoDB und
 
 ---
 
-## 🏆 Grade System
+##  Grade System
 
 | Score | Grade |
 |-------|-------|
@@ -335,7 +335,7 @@ Your quiz state (score, current question, name, avatar) is stored in MongoDB und
 
 ---
 
-## 🧪 Experiment and Break Things
+##  Experiment and Break Things
 
 Once you have played the quiz, the real learning starts. Make changes and observe what happens:
 
@@ -362,7 +362,7 @@ docker compose up --build
 
 ---
 
-## 🙋 FAQ
+##  FAQ
 
 **Q: Do I need to install Python or MongoDB?**
 No. Docker installs and manages everything inside containers. Your machine only needs Docker Desktop.
@@ -391,11 +391,11 @@ Docker may have used cached image layers. Run `docker compose up --build --no-ca
 
 ---
 
-## 📦 Go Further — Hands-On Docker Labs
+##  Go Further — Hands-On Docker Labs
 
 This quiz gives you the theory. The labs repo gives you the practice.
 
-**👉 [github.com/samuel-nartey/devops-labs](https://github.com/samuel-nartey/devops-labs)**
+** [github.com/samuel-nartey/devops-labs](https://github.com/samuel-nartey/devops-labs)**
 
 The DevOps Labs repo contains practical exercises where you will:
 - Write Dockerfiles from scratch for different application types
@@ -406,7 +406,7 @@ The DevOps Labs repo contains practical exercises where you will:
 
 ---
 
-## 👤 Author
+##  Author
 
 **Samuel Nartey**
 GitHub: [@samuel-nartey](https://github.com/samuel-nartey)
@@ -414,7 +414,7 @@ DevOps Labs: [github.com/samuel-nartey/devops-labs](https://github.com/samuel-na
 
 ---
 
-## 📄 License
+## License
 
 MIT — free to use, fork, and share.
 If this helped you learn Docker, give it a ⭐ and pass it on to someone who is just getting started.
