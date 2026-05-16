@@ -5,11 +5,11 @@ services:
     build: .                          # Build from Dockerfile in this directory
     container_name: dockerquiz-app
     ports:
-      - "5000:5000"                   # HOST:CONTAINER — access at http://localhost:5000
+      - "8000:5000"                   # HOST:CONTAINER — access at http://localhost:8000
     environment:
       - MONGO_URI=mongodb://mongo:27017/  # "mongo" = the service name below (Docker DNS)
-    depends_on:
-      - mongo                         # Wait for MongoDB to start first
+    #depends_on:
+    # - mongo                         # Wait for MongoDB to start first
     networks:
       - quiz-network                  # All 3 services share this internal network
     restart: unless-stopped
@@ -36,8 +36,8 @@ services:
       ME_CONFIG_MONGODB_SERVER: mongo      # Points to the "mongo" service by name
       ME_CONFIG_MONGODB_PORT: 27017
       ME_CONFIG_BASICAUTH: "false"         # Disable login for easy local practice
-    depends_on:
-      - mongo
+    #depends_on:
+     # - mongo
     networks:
       - quiz-network
     restart: unless-stopped
